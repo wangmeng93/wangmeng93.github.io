@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.title = '电量不足，充电ing';
-    console.log("ngOnInit Success");
+    console.log("ngOnInit Success !");
   }
 
 }
