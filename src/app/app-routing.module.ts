@@ -3,12 +3,12 @@ import {RouterModule, Routes} from '@angular/router';
 
 const appRoutes: Routes = [
 
-  {path: '', redirectTo: '', pathMatch: 'full'}
+  {path: "home", loadChildren: './home/home.module#HomeModule'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
   declarations: [
-
   ],
   exports: [RouterModule]
 })
