@@ -4,12 +4,17 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import {ArticlesComponent} from '../articles/articles.component';
+import {ArticleDetailComponent} from './article-detail/article-detail.component';
 
 const articlesRoutes: Routes = [
-  {path: '123456', component: ArticleDetailComponent},
-  // {path: ':articleId', component: ArticleDetailComponent},
-  {path: '', redirectTo: 'articles', pathMatch: 'full'}
+  {
+    path: '',
+    component: ArticlesComponent,
+  }, {
+    path: '123456',
+    component: ArticleDetailComponent
+  },
 ];
 
 @NgModule({

@@ -13,6 +13,6 @@ export class ArticleDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    console.log('article-detail onInit ...');
   }
 }
