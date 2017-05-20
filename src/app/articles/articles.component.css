@@ -1,0 +1,9 @@
+.main-container {
+  position: absolute;
+  top: 41px;
+  bottom: 128px;
+  left: 0;
+  right: 0;
+  background: url(../../assets/imgs/bg.jpg) repeat;
+  color: #fff;
+}

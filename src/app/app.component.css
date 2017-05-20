@@ -5,7 +5,7 @@ nav {
   background: url(../assets/imgs/nav-bg.gif) repeat-x;
   border-bottom: 2px solid #e15671;
   position: relative;
-  z-index: 5
+  z-index: 5;
 }
 
 .menu {
@@ -14,7 +14,7 @@ nav {
 
 .menu ul {
   padding-right: 25px;
-  position: relative
+  position: relative;
 }
 
 .menu ul li {
@@ -23,27 +23,32 @@ nav {
   float: left;
   line-height: 41px;
   color: #fff;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .menu ul li a {
   color: #fff;
   display: block;
-  padding: 0 18px
+  padding: 0 18px;
 }
 
 .menu ul li:first-child {
-  border-left: none
+  border-left: none;
 }
 
 .menu ul li:last-child {
-  border-right: none
+  border-right: none;
 }
 
 .menu ul li.active {
-  background: #e15671
+  background: #e15671;
 }
-
+.menu ul li:hover{
+  background: #e15671;
+}
+.active {
+  background: #e15671;
+}
 /*footer*/
 footer {
   position: fixed;
