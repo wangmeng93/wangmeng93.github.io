@@ -6,9 +6,8 @@ import {RouterModule} from '@angular/router';
 
 import {HomeComponent} from './home.component';
 
-import {homeRoutes} from './home.routes';
+import {homeRoutes} from './home.routing.module';
 @NgModule({
-
   declarations: [
     HomeComponent,
   ],
@@ -16,7 +15,6 @@ import {homeRoutes} from './home.routes';
     CommonModule,
     FormsModule,
     HttpModule,
-
     RouterModule.forChild(homeRoutes)
   ]
 })
