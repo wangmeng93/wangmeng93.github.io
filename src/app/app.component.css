@@ -28,7 +28,6 @@ nav {
 
 .menu ul li a {
   color: #fff;
-  display: block;
   padding: 0 18px;
 }
 
@@ -43,12 +42,31 @@ nav {
 .menu ul li.active {
   background: #e15671;
 }
-.menu ul li:hover{
+
+.menu ul li:hover {
   background: #e15671;
 }
+
+.ch-style {
+  display: block;
+}
+
+.en-style {
+  display: none;
+}
+
+.menu ul li:hover .ch-style {
+  display: none;
+}
+
+.menu ul li:hover .en-style {
+  display: block;
+}
+
 .active {
   background: #e15671;
 }
+
 /*footer*/
 footer {
   position: fixed;
