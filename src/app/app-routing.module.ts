@@ -7,7 +7,7 @@ const appRoutes: Routes = [
   {path: "articles", loadChildren: './articles/articles.module#ArticlesModule'},
   {path: "contact", loadChildren: './contact/contact.module#ContactModule'},
   {path: "problems", loadChildren: './problems/problems.module#ProblemsModule'},
-  {path: '', redirectTo: 'articles', pathMatch: 'full'}
+  {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

@@ -1,0 +1,80 @@
+@charset "utf-8";
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, p, input, select, textarea, form {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  height: 100%
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: none;
+  display: block
+}
+
+input, select, textarea, button {
+  outline: none;
+  border: none;
+  background-color: transparent
+}
+
+em, i, dfn {
+  font-style: normal
+}
+
+textarea {
+  resize: none
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+button {
+  cursor: pointer;
+  transition: .5s
+}
+
+button:focus {
+  border: none;
+  outline: none;
+  opacity: .6;
+  filter: alpha(opacity=60)
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.clear:after, .clear:before {
+  content: "";
+  display: table
+}
+
+.clear:after {
+  clear: both
+}
+
+.clear {
+  *zoom: 1
+}
+
+.center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
