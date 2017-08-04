@@ -3,16 +3,22 @@
  */
 import {Component, OnInit} from '@angular/core';
 
+import {ArticlesService, ArticlesItems} from './shared/articles.service';
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-  constructor() {
+  constructor(private articlesService: ArticlesService) {
   }
 
+  articlesItems: ArticlesItems[];
+
   ngOnInit() {
-    console.log('articles onInit ...');
+    this.articlesService.getArticlesItems()
+      .then(articlesItems =>{
+        this.articlesItems = articlesItems;
+      })
   }
 }

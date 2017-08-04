@@ -1,5 +1,12 @@
 <div class="main-container">
   <p>This is articles page !!!</p>
+  <ul>
+    <li *ngFor="let article of articlesItems">
+      <p>文章ID：{{ article.articleId }}</p>
+      <p>文章标题：{{ article.articleTitle }}</p>
+      <p>文章分类：{{ article.articleType }}</p>
+    </li>
+  </ul>
 </div>
 <router-outlet></router-outlet>
 

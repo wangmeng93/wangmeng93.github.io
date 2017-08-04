@@ -1,1 +1,570 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, button, input, form img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.24rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  resize: none;
+}
+
+input, button {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+
+a, a:active, a:visited, a:link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*自定义，常用通用样式*/
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.forbid-scroll {
+  overflow-y: hidden;
+}
+
+.dialog-forbid-scroll {
+  overflow-y: hidden;
+
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+.center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tj {
+  text-align: justify;
+}
+
+.db {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.space-88 {
+  width: 100%;
+  height: 0.88rem;
+}
+
+/*字体*/
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.f12 {
+  font-size: 0.12rem;
+}
+
+.f14 {
+  font-size: 0.14rem;
+}
+
+.f16 {
+  font-size: 0.16rem;
+}
+
+.f18 {
+  font-size: 0.18rem;
+}
+
+.f20 {
+  font-size: 0.2rem;
+}
+
+.f24 {
+  font-size: 0.24rem;
+}
+
+.f26 {
+  font-size: 0.26rem;
+}
+
+.f28 {
+  font-size: 0.28rem;
+}
+
+.f30 {
+  font-size: 0.3rem;
+}
+
+.f32 {
+  font-size: 0.32rem;
+}
+
+.f36 {
+  font-size: 0.36rem;
+}
+
+.f38 {
+  font-size: 0.38rem;
+}
+
+.f42 {
+  font-size: 0.42rem;
+}
+
+.f46 {
+  font-size: 0.46rem;
+}
+
+.f52 {
+  font-size: 0.52rem;
+}
+
+.f60 {
+  font-size: 0.6rem;
+}
+
+/*line-height*/
+.lineHeight-44 {
+  line-height: 0.44rem;
+}
+
+/*margin：0 5 10 20 30 40*/
+.m0 {
+  margin: 0;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.m5 {
+  margin: 0.5rem;
+}
+
+.ml5 {
+  margin-left: 0.05rem;
+}
+
+.mt5 {
+  margin-top: 0.05rem;
+}
+
+.mr5 {
+  margin-right: 0.05rem;
+}
+
+.mb5 {
+  margin-bottom: 0.05rem;
+}
+
+.m10 {
+  margin: 0.1rem;
+}
+
+.ml10 {
+  margin-left: 0.1rem;
+}
+
+.mt10 {
+  margin-top: 0.1rem;
+}
+
+.mr10 {
+  margin-right: 0.1rem;
+}
+
+.mb10 {
+  margin-bottom: 0.1rem;
+}
+
+.m15 {
+  margin: 0.15rem;
+}
+
+.ml15 {
+  margin-left: 0.15rem;
+}
+
+.mt15 {
+  margin-top: 0.15rem;
+}
+
+.mr15 {
+  margin-right: 0.15rem;
+}
+
+.mb15 {
+  margin-bottom: 0.15rem;
+}
+
+.m20 {
+  margin: 0.2rem;
+}
+
+.ml20 {
+  margin-left: 0.2rem;
+}
+
+.mt20 {
+  margin-top: 0.2rem;
+}
+
+.mr20 {
+  margin-right: 0.2rem;
+}
+
+.mb20 {
+  margin-bottom: 0.2rem;
+}
+
+.m30 {
+  margin: 0.3rem;
+}
+
+.ml30 {
+  margin-left: 0.3rem;
+}
+
+.mt30 {
+  margin-top: 0.3rem;
+}
+
+.mb30 {
+  margin-bottom: 0.3rem;
+}
+
+.m40 {
+  margin: 0.4rem;
+}
+
+.ml40 {
+  margin-left: 0.4rem;
+}
+
+.mt40 {
+  margin-top: 0.4rem;
+}
+
+.mr40 {
+  margin-right: 0.4rem;
+}
+
+.mb40 {
+  margin-bottom: 0.4rem;
+}
+
+/*padding:0 5 10 20 30 40*/
+.p0 {
+  padding: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.p5 {
+  padding: 0.05rem;
+}
+
+.pl5 {
+  padding-left: 0.05rem;
+}
+
+.pt5 {
+  padding-top: 0.05rem;
+}
+
+.pr5 {
+  padding-right: 0.05rem;
+}
+
+.pb5 {
+  padding-bottom: 0.05rem;
+}
+
+.p10 {
+  padding: 0.1rem;
+}
+
+.pl10 {
+  padding-left: 0.1rem;
+}
+
+.pt10 {
+  padding-top: 0.1rem;
+}
+
+.pr10 {
+  padding-right: 0.1rem;
+}
+
+.pb10 {
+  padding-bottom: 0.1rem;
+}
+
+.p15 {
+  padding: 0.15rem;
+}
+
+.pl15 {
+  padding-left: 0.15rem;
+}
+
+.pt15 {
+  padding-top: 0.15rem;
+}
+
+.pr15 {
+  padding-right: 0.15rem;
+}
+
+.pb15 {
+  padding-bottom: 0.15rem;
+}
+
+.p20 {
+  padding: 0.2rem;
+}
+
+.pl20 {
+  padding-left: 0.2rem;
+}
+
+.pt20 {
+  padding-top: 0.2rem;
+}
+
+.pr20 {
+  padding-right: 0.2rem;
+}
+
+.pb20 {
+  padding-bottom: 0.2rem;
+}
+
+.pt24 {
+  padding-top: 0.24rem;
+}
+
+.pb24 {
+  padding-bottom: 0.24rem;
+}
+
+.p30 {
+  padding: 0.3rem;
+}
+
+.pl30 {
+  padding-left: 0.3rem;
+}
+
+.pr30 {
+  padding-right: 0.3rem;
+}
+
+.pt30 {
+  padding-top: 0.3rem;
+}
+
+.pb30 {
+  padding-bottom: 0.3rem;
+}
+
+.p40 {
+  padding: 0.4rem;
+}
+
+.pl40 {
+  padding-left: 0.4rem;
+}
+
+.pt40 {
+  padding-top: 0.4rem;
+}
+
+.pr40 {
+  padding-right: 0.4rem;
+}
+
+.pb40 {
+  padding-bottom: 0.4rem;
+}
+
+.p50 {
+  padding: 0.5rem;
+}
+
+.pl50 {
+  padding-left: 0.5rem;
+}
+
+.pt50 {
+  padding-top: 0.5rem;
+}
+
+.pr50 {
+  padding-right: 0.5rem;
+}
+
+.pb50 {
+  padding-bottom: 0.5rem;
+}
+
+.pl100 {
+  padding-left: 1rem;
+}
+
+.pt150 {
+  padding-top: 1.5rem;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.max-w100 {
+  max-width: 1rem;
+}
+
+.max-w200 {
+  max-width: 2rem;
+}
+
+.max-w300 {
+  max-width: 3rem;
+}
+
+.max-400 {
+  max-width: 4rem;
+}
+
+.max-w100-percent {
+  max-width: 100%;
+}
+
+.radius8 {
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+}
+
+.radius4 {
+  -webkit-border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  -o-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+}
+
