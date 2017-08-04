@@ -12,7 +12,7 @@ const articlesRoutes: Routes = [
     path: '',
     component: ArticlesComponent,
   }, {
-    path: '123456',
+    path: ':articleId',
     component: ArticleDetailComponent
   },
 ];
