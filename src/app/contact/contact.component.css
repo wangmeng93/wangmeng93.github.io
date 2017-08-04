@@ -1,0 +1,14 @@
+.border-bottom {
+  border-bottom: 2px solid #666;
+}
+
+.basic-info-con > li {
+  width: 50%;
+  float: left;
+  padding-bottom: 0.2rem;
+  text-indent: 0.2rem;
+}
+
+.tech-con > li {
+  padding-bottom: 0.2rem;
+}

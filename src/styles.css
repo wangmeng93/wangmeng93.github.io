@@ -89,11 +89,11 @@ li {
   position: fixed;
 }
 
-.clearfix {
+.clear-fix {
   zoom: 1;
 }
 
-.clearfix:after {
+.clear-fix:after {
   content: "";
   display: table;
   clear: both;
