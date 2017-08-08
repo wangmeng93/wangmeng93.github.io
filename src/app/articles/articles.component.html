@@ -1,10 +1,7 @@
 <div class="main-container">
-  <p>This is articles page !!!</p>
-  <ul>
-    <li *ngFor="let article of articlesItems">
-      <p>文章ID：{{ article.articleId }}</p>
-      <p>文章标题：{{ article.articleTitle }}</p>
-      <p>文章分类：{{ article.articleType }}</p>
+  <ul class="pt30 pl30">
+    <li *ngFor="let article of articlesItems; let i = index" class="pt20">
+      <a class="a-link" href="{{ article.url }}">{{i+1}} . {{ article.title }}</a>
     </li>
   </ul>
 </div>
